@@ -10,6 +10,7 @@ defmodule RabbitExample.Application do
     children = [
       # Starts a worker by calling: RabbitExample.Worker.start_link(arg)
       # {RabbitExample.Worker, arg}
+      {RabbitExample.Consumer, []}
     ]
 
     # See https://hexdocs.pm/elixir/Supervisor.html
